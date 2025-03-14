@@ -1,6 +1,10 @@
 package court_reserver_interface
 
-import "time"
+import (
+	"time"
+
+	"github.com/endaytrer/court_reserver_interface/captcha_solver"
+)
 
 type Site int
 
@@ -108,5 +112,5 @@ type ReservationStatus struct {
 }
 
 type CourtReserver interface {
-	BookNow(time_zone *time.Location, reservation *Reservation, captcha_solver CaptchaSolver) ReservationStatus
+	BookNow(time_zone *time.Location, reservation *Reservation, captcha_solver captcha_solver.CaptchaSolver) ReservationStatus
 }

@@ -1,4 +1,4 @@
-package court_reserver_interface
+package captcha_solver
 
 import "github.com/google/uuid"
 
