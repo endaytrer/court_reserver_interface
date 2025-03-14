@@ -3,7 +3,6 @@ package court_reserver_interface
 import "time"
 
 type Site int
-type CourtName string
 
 const (
 	XingqingSoutheastTennisCourts         Site = 301
@@ -84,7 +83,7 @@ type SingleBook struct {
 	StartTime time.Duration
 	Duration  time.Duration
 	// preferring booking name
-	CourtNamePreference []CourtName
+	CourtNamePreference []string
 }
 type Reservation struct {
 	Date time.Time
