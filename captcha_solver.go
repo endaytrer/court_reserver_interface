@@ -18,9 +18,9 @@ type ChallengeMessage struct {
 	TrackList         []TrackPoint `json:"trackList"`
 }
 type SolveResult struct {
-	uuid         uuid.UUID
-	msg          ChallengeMessage
-	challengeUrl string
+	Uuid         uuid.UUID
+	Msg          ChallengeMessage
+	ChallengeUrl string
 }
 
 type CaptchaInfo struct {
