@@ -40,5 +40,5 @@ type ReservationStatus struct {
 }
 
 type CourtReserver interface {
-	BookNow(time_zone *time.Location, reservation *Reservation, captcha_solver captcha_solver.CaptchaSolver) ReservationStatus
+	BookNow(time_zone *time.Location, reservation *Reservation, captcha_solver captcha_solver.CaptchaSolver, payment_password *string) ReservationStatus
 }
