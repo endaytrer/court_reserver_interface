@@ -30,6 +30,7 @@ const (
 	Success
 	NeedPayment
 	Failed
+	NeedAuthorization
 )
 
 type ReservationStatus struct {
